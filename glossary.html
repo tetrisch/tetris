@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tetrisちゃんねる</title>  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet"> 
+	<link rel="icon" href="img/favi.ico" type="image/vnd.microsoft.icon">					
+</head>
+ <body>
+  
+  <header>
+  	    
+    <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="nav navbar-header">
+        	<button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+            	<span class="glyphicon glyphicon-th-list"></span>
+            </button>
+        	<a class="navbar-brand" href="index.html">
+            Tetris</a>
+        </div>
+        
+        <div class="collapse navbar-collapse target">
+
+
+            <ul class="nav navbar-nav">
+                <li ><a href="">
+                	<li class="dropdown"><a href="basic.html" class="dropdown-toggle" data-toggle="dropdown">Basic <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li class="active"><a href="glossary.html">用語集</a></li>
+           				  <li ><a href="rule.html">ルール</a></li>
+                            <li class="divider"></li>
+                            <li><a href="stacking.html">Stacking</a></li>
+                            <li><a href="srs.html">SRS</a></li>
+                             <li><a href="ren.html">Combo</a></li>
+						</ul>
+ 					</li>
+                    
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">VS Method <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="attack.html">積み</a></li>
+                            <li><a href="dig.html">堀り</a></li>                            
+                            <li><a href="vstec.html">テクニック</a></li>
+                            <li><a href="start.html">開幕</a></li>
+						</ul>
+ 					</li></li>
+
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Spin Method<b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="spins.html">回転入れ</a></li>       
+                            <li><a href="t-spin.html">T-Spin</a></li>
+						</ul>
+ 					</li></li>
+
+
+
+
+
+				      
+            </ul>
+
+        
+        </div>
+    </nav>
+    
+  </header>
+  
+  <article class="container">
+  
+  
+    <ul class="nav nav-tabs" style="margin-bottom:15px;">
+    	<li class="active"><a href="#a" data-toggle="tab">あ行</a></li>
+    	<li><a href="#ka" data-toggle="tab">か行</a></li>
+    	<li><a href="#sa" data-toggle="tab">さ行</a></li> 
+        <li><a href="#ta" data-toggle="tab">た行</a></li>
+        <li><a href="#na" data-toggle="tab">な行</a></li>
+        <li><a href="#ha" data-toggle="tab">は行</a></li>
+        <li><a href="#ma" data-toggle="tab">ま行</a></li>
+        <li><a href="#ya" data-toggle="tab">や行</a></li>
+        <li><a href="#ra" data-toggle="tab">ら行</a></li>
+        <li><a href="#wa" data-toggle="tab">わ行</a></li> 
+        <li><a href="#other" data-toggle="tab">other</a></li> 	
+        </ul>
+    
+    	 
+       
+            <div class="tab-content">               
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane active" id="a">				
+                	<div class="panel-group" id="accordion">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1_1">
+                                    	Iミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse1_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	Iミノ（アイミノ）はミノの一種．棒状，アルファベットのIの形をしているミノ．<br>
+                                    ワールドルールでは水色と定められている．<br>
+                                    ワールドルールが定着する前の日本製テトリスの多くでは赤色だった．<br>
+									<br>
+									<br>
+
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+                                </div>    
+                            </div>
+                        	    
+						</div>
+ 
+ 
+ 
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1_2">
+                                    	アリカ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse1_2" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	アリカは日本のテレビゲーム制作会社．<br>
+									「テトリス　ザ・グランドマスター（TGM）」を制作した．
+                                </div>    
+                            </div>
+                        	    
+						</div>
+<!--
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1_a">
+                                    	アルギミス
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse1_a" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+									アルギミスはIミノを接地させる際に目的の穴から1列ずれること．<br>
+                                    テトリスを狙いハードドロップをした際に起きることが知られている．<br>
+                                    アルギミスをすることを「アルギる」などという．アルギ．
+                                </div>    
+                            </div>
+						</div>
+                        
+-->
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1_3">
+                                    	アレクセイ・パジトノフ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse1_3" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	アレクセイ・ハジトノフはソビエト連邦の科学者．<br>
+									テトリスを開発した人物の一人．
+                                </div>    
+                            </div>
+						</div>
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1_b">
+                                    	インフィニティ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse1_b" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+									インフィニティはミノが接地したあとの遊びの間，ミノの回転か移動をすると<br>
+                                    遊びの時間がリセットされることを利用してゲームの進行をとめること．<br>
+									対戦型テトリスでは制限が設けられていることがおおい．<br>
+									無限回転．
+                                </div>    
+                            </div>
+                        	    
+						</div>
+
+
+                      	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1_4">
+                                    	Lミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse1_4" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	Lミノ（エルミノ）はミノの一種．アルファベットのLの形をしているミノ．<br>
+                                    ワールドルールでは橙色と定められている．<br>
+									<br>
+									<br>
+
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+                                </div>    
+                            </div>
+						</div>                                         
+                        
+                      	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1_5">
+                                    	Sミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse1_5" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	Sミノ（エスミノ）はミノの一種．アルファベットのSの形をしているミノ．<br>
+                                    ワールドルールでは緑色と定められている．<br>
+                                    ワールドルールが定着する前の日本製テトリスの多くでは紫色だった．<br>
+									<br>
+									<br>
+
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+                                </div>    
+                            </div>
+						</div>                                         
+                                                
+                      	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1_6">
+                                    	Oミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse1_6" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	Oミノ（オーミノ）はミノの一種．正方形，アルファベットのOの形をしているミノ．<br>
+                                    ワールドルールでは黄色と定められている．<br>
+									<br>
+									<br>
+
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+                                </div>    
+                            </div>
+						</div>                                         
+                        
+					</div>					      
+                </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="ka">
+                
+                	<div class="panel-group" id="accordion2">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_1">
+                                    	回転入れ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	回転入れ（かいてんいれ）はミノ移動だけでは入れられない地形に回転を利用して入れること．<br>
+                                    スーパーローテーションシステムによって確立された．
+                                </div>    
+                            </div>
+						</div>
+ 
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_a">
+                                    	回転軸
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_a" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	回転軸（かいてんじく）はミノが回転する際の軸．<br>
+                                    ワールドルールでは統一されている．<br>
+                                    回転入れや最適化で重要になる．
+                                </div>    
+                            </div>
+						</div>
+  
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_2">
+                                    	回転法則
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_2" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	回転法則（かいてんほうそく）はミノが回転する際の法則．<br>
+									ワールドルールではスーパーローテーションシステムが採用され，直感的な操作が可能となった．
+                                </div>    
+                            </div>
+						</div>
+                        
+                        
+                        
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_3">
+                                    	壁蹴り
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_3" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	壁蹴り（かべけり）はミノが回転する際に障害物がある場合でも回転できるシステム．<br>
+                                    主にスーパーローテーションシステムが採用される前に，それと似たような動きをする仕組みを指す．
+                                </div>    
+                            </div>
+                        	    
+						</div>                                               
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_4">
+                                    	空T
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_4" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	空T（からティー）とはライン消去を伴わないT-Spinのこと．<br>
+                                    T-Spin Zero.
+                                </div>    
+                            </div>
+						</div>                                               
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_5">
+                                    	ゴーストブロック
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_5" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ゴーストブロックはミノの着地点を影のように表示するシステム．<br>
+                                    「テトリス　ザ・グランドマスター」で始めて採用された．<br>
+                                    オプションで非表示にすることも可能．<br>
+                                    ゴースト．
+                                </div>    
+                            </div>
+						</div>                                               
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_6">
+                                    	コン
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_6" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	コンは1回だけ横移動ボタンを押すこと．<br>
+                                    主に最適化において使われる用語．
+                                </div>    
+                            </div>
+						</div>    
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_7">
+                                    	コンコン
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_7" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	コンコンは2回連続で横移動ボタンを押すこと．<br>
+                                    主に最適化において使われる用語．
+                                </div>    
+                            </div>
+						</div>                                               
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion2" href="#collapse2_8">
+                                    	コンボ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse2_8" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	コンボはライン消去を連続して行うこと．<br>
+                                    ライン消去を伴わないミノ接地まで継続される．<br>
+                                     REN．
+                                </div>    
+                            </div>
+						</div>                                               
+                        
+                        
+                        
+					</div>					      
+                
+                
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="sa">
+					<div class="panel-group" id="accordion3">
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_a">
+                                    	最適化
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_a" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	最適化（さいてきか）はミノを最も少ない手順で目的の位置へ移動させる手法．<br>
+                                    ミノ自体の移動速度が速くても，制御しミスを減らすことができる．<br>             
+                                </div>    
+                            </div>
+						</div>       
+
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_1">
+                                    	刺さる
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	 刺さる（ささる）はテトリスにおいて画面が埋まりミノが出せなくなること．<br>
+                                     相手の攻撃などによりせり上がり，負けることを意味する．<br>
+                                     窒息．                                     
+                                </div>    
+                            </div>
+						</div>       
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_2">
+                                    	Jミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_2" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	Jミノ（ジェイミノ）はミノの一種．アルファベットのJの形をしているミノ．<br>
+                                    ワールドルールでは青色と定められている．<br>
+									<br>
+									<br>
+
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+                                </div>    
+                            </div>
+						</div>    
+                        
+                           
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_3">
+                                    	シングル
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_3" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	シングルは1ライン消すこと．<br>
+                                    相手に0ライン送ることができる．
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_4">
+                                    	スーパーローテーションシステム
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_4" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	スーパーローテーションシステムはワールドルールより採用された回転法則．<br>
+                                    これにより直感的な操作が可能となった．<br>
+                                    スーパーローテーション．SRS．SR．                                    
+                                </div>    
+                            </div>
+						</div>       
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_5">
+                                    	スプリット
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_5" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+									スプリットはIミノやLJミノを利用して，シングルを同時に2ライン分行うこと．
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_6">
+                                    	スプリント
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_6" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+									スプリントはテトリスにおいて，40ラインを消去する時間を競う競技．                                 
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_7">
+                                    	せり上がり
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_7" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+									せり上がり（せりあがり）はフィールド下部からブロックが現れること．<br>
+                                    相手の攻撃や時間経過により起こる．<br>
+                                    攻撃によりせり上がった１ラインのうち，１マス空いているマスのことを穴と呼ぶ．
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_8">
+                                    	Zミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_8" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	Zミノ（ゼットミノ）はミノの一種．アルファベットのZの形をしているミノ．<br>
+                                    ワールドルールでは赤色と定められている．<br>
+                                    ワールドルールが定着する前の日本製テトリスの多くでは緑色だった．<br>
+									<br>
+									<br>
+
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_9">
+                                    	相殺
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_9" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	相殺（そうさい）は相手からきた攻撃に自分の攻撃を合わせることでせり上がりを回避すること．<br>
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion3" href="#collapse3_10">
+                                    	ソフトドロップ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse3_10" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ソフトドロップは自由落下より速くミノを下ろす操作．<br>
+									主に回転入れの際に使用する．                                                                        
+                                </div>    
+                            </div>
+						</div>       
+
+					</div>
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="ta">
+                
+      				<div class="panel-group" id="accordion4">
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_1">
+                                    	妥協消し
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	妥協消し（だきょうけし）はミノを妥協して接地して行うライン消去のこと．
+                                </div>    
+                            </div>
+						</div>  
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_a">
+                                    	ダブル
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_a" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ダブルは2ライン同時に消すこと．<br>
+                                    相手に1ライン送ることができる．
+                                </div>    
+                            </div>
+						</div>  
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_2">
+                                    	地形
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_2" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	地形（ちけい）はフィールドに置かれたミノの形状のこと．<br>
+									ミノ接地にかかわる上部について注目することがおおい．
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_3">
+                						窒息
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_3" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	    窒息（ちっそく）はテトリスにおいて画面が埋まりミノが出せなくなること．<br>
+                                        相手の攻撃などによりせり上がり，負けることを意味する．<br>
+                                        刺さる．
+                                </div>    
+                            </div>
+						</div>       
+
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_4">
+                						ツモ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_4" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ツモは落ちてくるミノのこと．およびその順番．
+                                	   
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_5">
+                						T-Spin
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_5" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	T-Spin（ティースピン）はTミノにおける回転入れの総称．<br>                                	   
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_6">
+                						T-Spin-Single
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_6" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	T-Spin-Single（ティースピンシングル）はT-Spinで1ライン消去すること．<br>                                	   
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_7">
+                						T-Spin-Zero
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_7" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	T-Spin-Zero（ティースピンゼロ）はライン消去を伴わないT-Spinのこと．<br>    
+                                    空T．                            	   
+                                </div>    
+                            </div>
+						</div>       
+                        
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_8">
+                						T-Spin-Double
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_8" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	T-Spin-Double（ティースピンダブル）はT-Spinで2ライン消去すること．<br>    
+                                </div>    
+                            </div>
+						</div>       
+
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_9">
+                						T-Spin-Triple
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_9" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	T-Spin-Triple（ティースピントリプル）はT-Spinで3ライン消去すること．<br>    
+                                </div>    
+                            </div>
+						</div>       
+
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_10">
+                						T-Spin-Mini
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_10" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	T-Spin-Mini（ティースピンミニ）はT-Spinで床や壁を利用して1ライン消去すること．<br>
+                                    正確には風車回転できないものを指す．
+                                </div>    
+                            </div>
+						</div>       
+
+                        
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_11">
+                						Tミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_11" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	Tミノ（ティーミノ）はミノの一種．アルファベットのTの形をしているミノ．<br>
+                                    ワールドルールでは紫色と定められている．<br>
+                                    ワールドルールが定着する前の日本製テトリスの多くでは水色だった．<br>
+									<br>
+									<br>
+
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_12">
+                						テトリス
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_12" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	テトリスは1985年にアレクセイ・パジトノフに開発され．世界的に大流行した落ち物パズルゲーム．<br>
+                                    また，ゲーム内では4ライン同時に消すこと．<br>
+                                    相手に4ライン送ることができる．
+
+
+                                </div>    
+                            </div>
+						</div>       
+
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_13">
+                						テトリス　ザ・グランドマスター
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_13" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+									テトリス　ザ・グランドマスターはアリカが制作したゲーム．<br>
+                                    それまでテトリスにはなかったシステムが多く存在し，<br>
+									後にガイドラインとして採用されたシステムもある．
+                                    
+                                </div>    
+                            </div>
+						</div>       
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_14">
+                						テトリミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_14" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	テトリミノは4つの正方形を組み合わせて作られた7種類のブロックのこと．<br>
+                                    テトラミノ．テトロミノ．ミノ．<br>
+                                    <br>
+                                    <br>
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+                                </div>    
+                            </div>
+						</div>       
+
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion4" href="#collapse4_15">
+										トリプル
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse4_15" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                        トリプルは3ライン同時に消すこと．<br>
+                                        相手に2ライン送ることができる．
+
+                                </div>    
+                            </div>
+						</div>       
+
+
+                	</div>
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="na">
+                	<div class="panel-group" id="accordion5">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion5" href="#collapse5_1">
+                                    	ネクスト
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse5_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ネクストは次に落ちてくるミノ．およびそれらを表示する場所．
+
+                                </div>    
+                            </div>
+						</div>
+                        
+                        
+                        
+					</div>
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="ha">
+                	<div class="panel-group" id="accordion6">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion6" href="#collapse6_1">
+                                    	ハードドロップ
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse6_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ハードドロップはミノを一瞬で落とし固定させる操作．
+                                </div>    
+                            </div>
+						</div>
+                        
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion6" href="#collapse6_2">
+                                    	パーフェクトクリア
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse6_2" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	パーフェクトクリアはフィールド内のミノすべて消すこと．
+                                </div>    
+                            </div>
+						</div>
+    
+ 
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion6" href="#collapse6_3">
+                                    	BackToBack
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse6_3" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	BackToBack（バックトゥーバック）は連続してテトリスやT-Spinを行うこと．
+                                    それ以外のライン消去を行うまで係属される．
+
+                                </div>    
+                            </div>
+						</div>
+    
+
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion6" href="#collapse6_4">
+                                    	フィールド
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse6_4" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	フィールドは実際に操作を行い，ミノを積み上げていく画面．<br>
+									プレイ画面のうちネクストやホールドを含まない部分．
+                                </div>    
+                            </div>
+						</div>
+  
+  
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion6" href="#collapse6_5">
+                                    	ヘンク・ブラウアー・ロジャース
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse6_5" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ヘンク・ブラウアー・ロジャースはオランダ人のゲームクリエイター．<br>
+                                    テトリスカンパニー等の会社を経営．
+
+                                </div>    
+                            </div>
+						</div>
+    
+                     	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion6" href="#collapse6_6">
+                                    	ホールド
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse6_6" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ホールドはミノを1つキープしておくことができるシステム．<br>
+                                    必要なときに入れ替えられるが，一度入れ替えた後はミノを接地するまで使用できない．
+
+                                </div>    
+                            </div>
+						</div>
+    
+                       
+                       
+                        
+					</div>
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="ma">
+                	<div class="panel-group" id="accordion7">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion7" href="#collapse7_1">
+                                    	マトリクス
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse7_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	マトリクスはゲームのプレイ画面のこと．<br>
+                                    フィールド，ホールドボックス，ネクストボックスの総称．
+                                </div>    
+                            </div>
+						</div>
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion7" href="#collapse7_2">
+                                   		ミノ
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse7_2" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                    	ミノは4つの正方形を組み合わせて作られた7種類のブロックのこと．<br>
+                                        テトリミノ，テトラミノ．テトロミノ．<br><br><br>
+            	                 	 <img src="img/mino.png" width="650" height="121" alt="mino">
+
+                                </div>    
+                            </div>
+						</div>
+     
+                        
+					</div>
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="ya">
+
+                	<div class="panel-group" id="accordion8">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion8" href="#collapse8_1">
+                                    	横溜め
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse8_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+									横溜め（よこだめ）はボタンを押し続けて自動的に動き始めるまでの遅れ.その時間.
+                                    DAS.
+                                </div>    
+                            </div>
+						</div>
+
+					</div>
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="ra">
+                	<div class="panel-group" id="accordion9">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion9" href="#collapse9_1">
+                                    	ライン
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse9_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ラインはフィールドの横一列のこと．<br>
+									行列でいう行に相当する．
+                                </div>    
+                            </div>
+						</div>
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion9" href="#collapse9_2">
+                                    	ライン消去
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse9_2" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ライン消去（らいんしょうきょ）はラインを揃えて消すこと．
+                                    テトリスの基本．
+                                </div>    
+                            </div>
+						</div>
+
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion9" href="#collapse9_3">
+                                    	REN
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse9_3" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	REN（レン）はライン消去を連続して行うこと．<br>
+									ライン消去を伴わないミノ接地まで継続される．<br>
+									コンボ．
+                                </div>    
+                            </div>
+						</div>
+
+					</div>                
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="wa">
+
+                	<div class="panel-group" id="accordion10">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion10" href="#collapse10_1">
+                                    	One-Two
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse10_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	One-Two（ワン・ツー）はIミノを用いてシングルとダブルを同時に行うこと．
+                                    
+                                </div>    
+                            </div>
+						</div>
+
+					</div>
+
+
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+                <div class="tab-pane" id="other">
+                	<div class="panel-group" id="accordion11">	
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion11" href="#collapse11_1">
+                                    	APM
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse11_1" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+									APMはAttack Per Minuteの略．<br>
+                                   1分間で相手に送るライン量．                                                                         
+                                </div>    
+                            </div>
+						</div>
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion11" href="#collapse11_2">
+                                    	ARE
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse11_2" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	AREはミノが接地されてから次のテトリミノが出現するまでの時間．
+
+                                </div>    
+                            </div>
+            			</div>
+
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion11" href="#collapse11_3">
+                                    	ARR
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse11_3" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	ARRはAuto Repeat Rateの略．<br>
+									横移動の速さ.
+                                </div>    
+                            </div>
+						</div>
+
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion11" href="#collapse11_4">
+                                    	 DAS
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse11_4" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	DASはDelayed Auto Shiftの略．<br>
+									ボタンを押し続けて自動的に動き始めるまでの遅れ.その時間. 横溜め.
+                                </div>    
+                            </div>
+						</div>
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion11" href="#collapse11_a">
+                                    	 IHS
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse11_a" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	IHSはInitial Hold Systemの略．<br>
+									先行ホールド入力．ミノ出現前にホールド入力を受け付けるシステム．
+                                </div>    
+                            </div>
+						</div>
+
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion11" href="#collapse11_b">
+                                    	 IRS
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse11_b" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	IRSはInitial Rotation Systemの略．<br>
+									先行回転入力．ミノ出現前に回転入力を受け付けるシステム．
+                                </div>    
+                            </div>
+						</div>
+
+
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion11" href="#collapse11_5">
+                                    	 LPM
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse11_5" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	LPMはLine Per Minuteの略．<br>
+									一分間に消すラインの量．
+                                </div>    
+                            </div>
+						</div>
+
+                   	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion11" href="#collapse11_6">
+                                    	 20G
+
+                                    </a>
+                                </h4>
+                            </div>
+  						
+                            <div id="collapse11_6" class="panel-collapse collapse in">
+                        		<div class="panel-body">
+                                	20Gは自由落下速度が無限大の状態．<br>
+									ミノが画面に出現すると同時に接地している状態．
+                                </div>    
+                            </div>
+						</div>
+
+
+					</div>
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------->            
+              </div>      
+
+  <div id="to-top" style="position:fixed;right:5px;bottom:5px;"><a href=""><img src="img/toTop.jpg" width="50" height="50" alt="totop"></a></div>
+
+  </article>
+
+  
+  
+  <footer>
+	<ul class="breadcrumb">
+    	<li><a href="index.html">home</a></li>
+        <li><a href="basic.html">Basic</a></li>
+    	<li><a href="glossary.html">用語集</a></li>
+
+    </ul>
+    	
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!------------------------------------------------------------------------------------------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+  
+  
+  	<script>   
+    	$(function(){
+			$(".collapse").collapse();	
+	
+			$("#to-top").hide();
+			
+			//スクロールが十分されたら表示，戻ったら非表示
+			$(window).scroll(function(){
+				$("#pos").text($(this).scrollTop());
+				
+				if($(this).scrollTop() > 60){
+					$("#to-top").fadeIn();
+				}else{
+					$("#to-top").fadeOut();
+				}
+				
+			});
+			
+			//to-topがクリックされたら上に戻る
+			
+			$("#to-top a").click(function(){
+				$("body,html").animate({
+						scrollTop:0	
+				},500	);
+				return false;
+				
+			});
+		});
+
+    </script>
+  
+  </body>
+</html>

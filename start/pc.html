@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tetrisちゃんねる</title>  
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/mystyle.css" rel="stylesheet"> 
+    
+<!--    <link rel="shortcut icon" href="image/favicon.ico" />-->    
+	<meta name="Keywords" content="chikuwiron,Tetris,ハロテト,hello tetris">
+    <meta name="description" content="Tetrisについての情報をまとめていきます．">
+    <meta name="author" content="chikuwiron">
+	<link rel="icon" href="../img/favi.ico" type="image/vnd.microsoft.icon">					
+</head>
+ <body>
+  
+  <header>
+  	    
+    <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="nav navbar-header">
+        	<button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+            	<span class="glyphicon glyphicon-th-list"></span>
+            </button>
+        	<a class="navbar-brand " href="../index.html">Tetris</a>
+        </div>
+        
+        <div class="collapse navbar-collapse target">
+
+            <ul class="nav navbar-nav">
+                <li ><a href="">
+                	<li class="dropdown"><a href="basic.html" class="dropdown-toggle" data-toggle="dropdown">Basic <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="../glossary.html">用語集</a></li>
+           				  <li ><a href="../rule.html">ルール</a></li>
+                            <li class="divider"></li>
+                            <li ><a href="../stacking.html">Stacking</a></li>
+                            <li><a href="../srs.html">SRS</a></li>
+                             <li><a href="../ren.html">Combo</a></li>
+						</ul>
+ 					</li>
+                    
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">VS Method <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="../attack.html">積み</a></li>
+                            <li><a href="../dig.html">堀り</a></li>                            
+                            <li><a href="../vstec.html">テクニック</a></li>
+                            <li><a href="../start.html">開幕</a></li>
+						</ul>
+ 					</li></li>
+
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Spin Method<b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="../spins.html">回転入れ</a></li>       
+                            <li ><a href="../t-spin.html">T-Spin</a></li>
+						</ul>
+ 					</li></li>
+
+
+
+				      
+            </ul>
+
+        
+        </div>
+    </nav>
+    
+  </header>
+  
+  <article class="container">
+         			
+    <p>  
+    <div class="col-sm-12">
+    
+    
+    <div class="page-header">
+          <h1>パーフェクトクリア <small></small></h1>
+    </div>  
+		<h3>概要</h3>
+			パーフェクトクリアとはフィールド内のブロックをすべて消去することです．<br>
+			パフェ，PCなどともいいます<br>
+
+      <img src="../img/pc/pc_001.jpg" width="176" height="140" >
+      <img src="../img/pc/pc_002.jpg" width="176" height="140" >
+      <img src="../img/pc/pc_003.jpg" width="176" height="140" ><br><br><br>
+	
+    ミノはすべて4ブロックからなり，1ラインは10ブロックからなります．<br>
+	したがってフィールドにあるブロックが奇数個の場合は，パーフェクトクリアは不能です．<br>
+    例えば相手からの攻撃によって1ブロック欠けたラインが1ライン送られてきた場合，<br>
+    偶数＋奇数＝奇数，奇数＋奇数＝偶数になることを考えると，<br>
+	相手から偶数ライン送られなければ，ブロックが偶数個にならないことがわかります．<br>
+
+
+      
+		
+			
+            
+			
+     <div id="start"><br><br><br></div>     
+	<h3 >開幕</h3>
+    	1ミノ4ブロック，1ライン10ブロックからなることと，7ミノ1セットの出現法則を利用して<br>
+		開幕に4ライン揃えてパーフェクトクリアを行う方法があります．<br>
+		手順としては，最初の6～7ミノを利用して受けやすい地形を作り，4～3ミノでライン消去を行います．<br>
+		<br>
+        <h4>パーフェクトクリア</h4>
+        最も一般的な形で，パーフェクトクリアも狙いやすいです．3つとも同じことをやっています．<br>
+		Iを回転入れして寝かせることも可能です．ネクストによって対応しましょう．<br>
+        また，端を空けて積むと妥協として平積みなどにも移行しやすいです．<br>
+        
+      <img src="../img/pc/pc_004.jpg" width="176" height="140" >
+      <img src="../img/pc/pc_005.jpg" width="176" height="140" >
+      <img src="../img/pc/pc_006.jpg" width="176" height="140" ><br><br><br>
+
+
+
+
+        <h4>グレースシステム</h4>
+        Tを使わない形．<br>
+		地形を180度回転させても同じです．<br>
+      <img src="../img/pc/pc_007.jpg" width="176" height="140" ><br><br><br>
+
+
+
+        <h4>ぴろしきパフェ</h4>
+		テトリスパフェを狙える形です．<br>
+
+      <img src="../img/pc/pc_008.jpg" width="176" height="140" >
+      <img src="../img/pc/pc_009.jpg" width="176" height="140" ><br><br><br>
+
+
+
+
+        <h4>ねこじゃらし</h4>
+		TSMが多く狙える形です．<br>
+
+      <img src="../img/pc/pc_010.jpg" width="176" height="140" ><br><br><br>
+
+        <h4>ストーンヘンジ</h4>
+        左右対称形でライン消去のイメージがわかりやすいです．<br>
+      <img src="../img/pc/pc_011.jpg" width="176" height="140" ><br><br><br>
+
+
+
+
+
+        <h4>名称不明</h4>
+        地形を作るときミノ順に多く左右されます．<br>
+      <img src="../img/pc/pc_012.jpg" width="176" height="140" ><br><br><br>
+
+      
+
+
+
+
+
+
+
+
+	<h3>パリティ</h3>
+    	パリティについては<a href="../pari.html">こちら</a>を参照してください．<br><br><br>
+
+
+
+            
+      </div>      
+      </p>
+      
+  
+  
+  
+  
+  
+  
+  </article>
+
+  
+  <div id="to-top" style="position:fixed;right:5px;bottom:5px;"><a href=""><img src="../img/toTop.jpg" width="50" height="50" alt="totop"></a></div>
+
+  
+  <footer>
+	<ul class="breadcrumb">
+    	<li><a href="../index.html">Home</a></li>
+    	<li><a href="../vs.html">VS Method</a></li>
+    	<li><a href="../start.html">開幕</a></li>
+    	<li><a href="../start/pc.html">パーフェクトクリア</a></li>
+
+	</ul>  
+    
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!------------------------------------------------------------------------------------------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  
+  
+  
+	 <script type="text/javascript" src="../js/myscript.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tetrisちゃんねる</title>  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet"> 
+    
+<!--    <link rel="shortcut icon" href="image/favicon.ico" />-->    
+	<meta name="Keywords" content="chikuwiron,Tetris">
+    <meta name="description" content="Tetrisについての情報をまとめていきます．">
+    <meta name="author" content="chikuwiron">
+	<link rel="icon" href="img/favi.ico" type="image/vnd.microsoft.icon">					
+</head>
+ <body>
+  
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="nav navbar-header">
+        	<button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+            	<span class="glyphicon glyphicon-th-list"></span>
+            </button>
+        	<a class="navbar-brand " href="index.html">Tetris</a>
+        </div>
+        
+        <div class="collapse navbar-collapse target">
+
+            <ul class="nav navbar-nav">
+                <li ><a href="">
+                	<li class="dropdown"><a href="basic.html" class="dropdown-toggle" data-toggle="dropdown">Basic <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="glossary.html">用語集</a></li>
+           				  <li ><a href="rule.html">ルール</a></li>
+                            <li class="divider"></li>
+                            <li><a href="stacking.html">Stacking</a></li>
+                            <li class="active"><a href="srs.html">SRS</a></li>
+                             <li><a href="ren.html">Combo</a></li>
+						</ul>
+ 					</li>
+                    
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">VS Method <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="attack.html">積み</a></li>
+                            <li><a href="dig.html">堀り</a></li>                            
+                            <li><a href="vstec.html">テクニック</a></li>
+                            <li><a href="start.html">開幕</a></li>
+						</ul>
+ 					</li></li>
+
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Spin Method<b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="spins.html">回転入れ</a></li>       
+                            <li><a href="t-spin.html">T-Spin</a></li>
+						</ul>
+ 					</li></li>
+
+
+
+				      
+            </ul>
+
+        
+        </div>
+    </nav>
+  </header>
+  
+  <article class="container">
+
+    <div class="page-header">
+          <h1>SRS <small>Super Rotation System</small></h1>
+    </div>  
+
+    <p>  
+   <div class="col-sm-12">  
+    	<h3>回転</h3>
+        ミノは回転軸を中心に左右90度回転します．<br>
+        Iミノは格子の中心が軸と捉えてもよいでしょう．<br>
+        <br>
+
+                      <table class="table table-striped table-bordered table-hover " >
+                            <thead>
+                                <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+                            </thead>
+                            <tbody>	
+                            	<tr>
+                            	  <td><img src="img/SRS/T1.jpg" width="100" height="100" alt="T1"></td>
+                            	  <td><img src="img/SRS/T2.jpg" width="100" height="100" alt="T2"></td>
+                            	  <td><img src="img/SRS/T3.jpg" width="100" height="100" alt="T3"></td>
+                                  <td><img src="img/SRS/T4.jpg" width="100" height="100" alt="T4"></td>
+                              </tr>
+                            	<tr>
+                            	  <td><img src="img/SRS/S1.jpg" width="100" height="100" alt="S1"></td>
+                            	  <td><img src="img/SRS/S2.jpg" width="100" height="100" alt="S2"></td>
+                            	  <td><img src="img/SRS/S3.jpg" width="100" height="100" alt="S3"></td>
+                                  <td><img src="img/SRS/S4.jpg" width="100" height="100" alt="S4"></td>
+                              </tr>
+                            	<tr>
+                            	  <td><img src="img/SRS/Z1.jpg" width="100" height="100" alt="Z1"></td>
+                            	  <td><img src="img/SRS/Z2.jpg" width="100" height="100" alt="Z2"></td>
+                            	  <td><img src="img/SRS/Z3.jpg" width="100" height="100" alt="Z3"></td>
+                                  <td><img src="img/SRS/Z4.jpg" width="100" height="100" alt="Z4"></td>
+                              </tr>
+                            	<tr>
+                            	  <td><img src="img/SRS/L1.jpg" width="100" height="100" alt="L1"></td>
+                            	  <td><img src="img/SRS/L2.jpg" width="100" height="100" alt="L2"></td>
+                            	  <td><img src="img/SRS/L3.jpg" width="100" height="100" alt="L3"></td>
+                                  <td><img src="img/SRS/L4.jpg" width="100" height="100" alt="L4"></td>
+                              </tr>
+                            	<tr>
+                            	  <td><img src="img/SRS/J1.jpg" width="100" height="100" alt="J1"></td>
+                            	  <td><img src="img/SRS/J2.jpg" width="100" height="100" alt="J2"></td>
+                            	  <td><img src="img/SRS/J3.jpg" width="100" height="100" alt="J3"></td>
+                                  <td><img src="img/SRS/J4.jpg" width="100" height="100" alt="J4"></td>
+                              </tr>
+                            	<tr>
+                            	  <td><img src="img/SRS/I1.jpg" width="100" height="100" alt="I1"></td>
+                            	  <td><img src="img/SRS/I2.jpg" width="100" height="100" alt="I2"></td>
+                            	  <td><img src="img/SRS/I3.jpg" width="100" height="100" alt="I3"></td>
+                                  <td><img src="img/SRS/I4.jpg" width="100" height="100" alt="I4"></td>
+                              </tr>
+                     
+                        </tbody>
+                        </table>   <br><br>
+
+
+
+    	<h3>補正</h3>
+    	従来のシステムでは回転を行う際，ミノを壁や床につけると回転できませんでした．<br>
+		これはプレイヤーの意思どおりに動かすという点では不利でした．<br>
+        スーパーローテーションシステムでは そのような点を克服するために補正が入ります．<br>
+		<br><br>
+        その際に以下の法則で移動します．<br><br>
+        
+        <br>     
+        下の表の0の状態（単純な回転）を考えみて，障害がなければ0,あれば1<br>
+		1の状態を考える．障害なければ1，あれば2...<br>
+		というように決定していきます．<br>
+<br>
+		なお，表中に赤い枠線で描いてあるものはTミノでは実現可能な地形が存在しません．<br>
+
+        <br>
+
+
+
+
+        
+
+                      <table class="table table-striped table-bordered table-hover " >
+                            <thead>
+                                <tr><th>変化</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+                            </thead>
+                            <tbody>	
+                            	<tr>
+                                  <td>A→D（左回転）<br>
+                                  <img src="img/SRS/T1.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/T4.jpg" width="50" height="50" >
+                                  </td>
+                            	  <td><img src="img/SRS/t1l0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t1l1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t1l2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t1l3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t1l4.jpg" width="100" height="100"></td>
+								</tr>    
+                            	<tr>
+                                  <td>A→B（右回転）<br>
+                                  <img src="img/SRS/T1.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/T2.jpg" width="50" height="50" >
+                                  </td>
+                            	  <td><img src="img/SRS/t1r0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t1r1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t1r2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t1r3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t1r4.jpg" width="100" height="100"></td>
+								</tr>    
+                            	<tr>
+                                  <td>B→A（左回転）<br>
+                                  <img src="img/SRS/T2.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/T1.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/t2l0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t2l1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t2l2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t2l3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t2l4.jpg" width="100" height="100"></td>
+								</tr>  
+                            	<tr>
+                                  <td>B→C（右回転）<br>
+                                  <img src="img/SRS/T2.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/T3.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/t2r0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t2r1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t2r2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t2r3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t2r4.jpg" width="100" height="100"></td>
+								</tr>    
+                            	<tr>
+                                  <td>C→B（左回転）<br>
+                                  <img src="img/SRS/T3.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/T2.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/t3l0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t3l1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t3l2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t3l3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t3l4.jpg" width="100" height="100"></td>
+								</tr>  
+                            	<tr>
+                                  <td>C→D（右回転）<br>
+                                  <img src="img/SRS/T3.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/T4.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/t3r0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t3r1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t3r2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t3r3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t3r4.jpg" width="100" height="100"></td>
+								</tr>    
+                            	<tr>
+                                  <td>D→C（左回転）<br>
+                                  <img src="img/SRS/T4.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/T3.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/t4l0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t4l1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t4l2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t4l3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t4l4.jpg" width="100" height="100"></td>
+								</tr>  
+                            	<tr>
+                                  <td>D→A（右回転）<br>
+                                  <img src="img/SRS/T4.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/T1.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/t4r0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t4r1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t4r2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t4r3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/t4r4.jpg" width="100" height="100"></td>
+								</tr>    
+                        </tbody>
+                        </table>   <br><br>
+	
+        Iミノ以外の5つのミノにおいて
+		<ol>
+        	<li>軸を左右に動かす</li>
+            	<ul>
+                	<li>0が90度（B）の場合は左，-90度（D）の場合は右へ移動</li>
+					<li>0が0度（A），180度（C）の場合は回転した方向の逆へ移動</li>
+                </ul>
+        	<li>その状態から軸を上下に動かす</li>
+            	<ul>
+                	<li>0が90度（B），-90度（D）の場合は上へ移動</li>
+					<li>0が0度（A），180度（C）の場合は下へ移動</li>
+                </ul>
+
+        	<li>元に戻し，軸を上下に2マス動かす</li>
+            	<ul>
+                	<li>0が90度（B），-90度（D）の場合は下へ移動</li>
+					<li>0が0度（A），180度（C）の場合は上へ移動</li>
+                </ul>
+            
+        	<li>その状態から軸を左右に動かす</li>
+            	<ul>
+                	<li>0が90度（B）の場合は左，-90度（D）の場合は右へ移動</li>
+					<li>0が0度（A），180度（C）の場合は回転した方向の逆へ移動</li>
+                </ul>
+            
+        </ol><br>
+<br>
+<br>
+<br>
+<br>
+                      <table class="table table-striped table-bordered table-hover " >
+                            <thead>
+                                <tr><th>変化</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+                            </thead>
+                            <tbody>	
+                            	<tr>
+                                  <td>A→D（左回転）<br>
+                                  <img src="img/SRS/I1.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/I4.jpg" width="50" height="50" >
+                                  </td>
+                            	  <td><img src="img/SRS/i1l0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i1l1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i1l2.jpg" width="100" height="100"></td>
+                                  <td><img src="img/SRS/i1l3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i1l4.jpg" width="100" height="100"></td>
+								</tr>    
+                            	<tr>
+                                  <td>A→B（右回転）<br>
+                                  <img src="img/SRS/I1.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/I2.jpg" width="50" height="50" >
+                                  </td>
+                            	  <td><img src="img/SRS/i1r0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i1r1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i1r2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i1r3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i1r4.jpg" width="100" height="100"></td>
+								</tr>    
+                            	<tr>
+                                  <td>B→A（左回転）<br>
+                                  <img src="img/SRS/I2.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/I1.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/i2l0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i2l1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i2l2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i2l3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i2l4.jpg" width="100" height="100"></td>
+								</tr>  
+                            	<tr>
+                                  <td>B→C（右回転）<br>
+                                  <img src="img/SRS/I2.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/I3.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/i2r0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i2r1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i2r2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i2r3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i2r4.jpg" width="100" height="100"></td>
+								</tr>    
+                            	<tr>
+                                  <td>C→B（左回転）<br>
+                                  <img src="img/SRS/I3.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/I2.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/i3l0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i3l1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i3l2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i3l3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i3l4.jpg" width="100" height="100"></td>
+								</tr>  
+                            	<tr>
+                                  <td>C→D（右回転）<br>
+                                  <img src="img/SRS/I3.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/I4.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/i3r0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i3r1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i3r2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i3r3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i3r4.jpg" width="100" height="100"></td>
+								</tr>    
+                            	<tr>
+                                  <td>D→C（左回転）<br>
+                                  <img src="img/SRS/I4.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/I3.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/i4l0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i4l1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i4l2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i4l3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i4l4.jpg" width="100" height="100"></td>
+								</tr>  
+                            	<tr>
+                                  <td>D→A（右回転）<br>
+                                  <img src="img/SRS/I4.jpg" width="50" height="50" >　<span class="glyphicon glyphicon-arrow-right">
+                                  <img src="img/SRS/I1.jpg" width="50" height="50" >
+                            	  <td><img src="img/SRS/i4r0.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i4r1.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i4r2.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i4r3.jpg" width="100" height="100"></td>
+                            	  <td><img src="img/SRS/i4r4.jpg" width="100" height="100"></td>
+    							</tr>    
+                        </tbody>
+                        </table>   <br><br>
+		Iミノに関しては
+		<ol>
+        	<li>軸を左右に動かす</li>
+            	<ul>
+                	<li>0が90度（B）の場合は右，-90度（D）の場合は左へ移動（枠にくっつく）</li>
+					<li>0が0度（A），180度（C）の場合は回転した方向の逆へ移動　0度は２マス移動</li>
+                </ul>
+        	<li>軸を左右に動かす</li>
+            	<ul>
+                	<li>0が90度（B）の場合は左，-90度（D）の場合は右へ移動（枠にくっつく）</li>
+					<li>0が0度（A），180度（C）の場合は回転した方向へ移動　180度は２マス移動</li>
+                </ul>
+
+        	<li>軸を上下に動かす</li>
+            	<ul>
+                	<li>0が90度（B）の場合は1を下，-90度（D）の場合は1を上へ移動</li>
+					<li>0が0度（A），180度（C）の場合は<br>
+						回転前のミノが右半分にある（B）なら1を上へ<br>
+						回転前のミノが左半分にある（D）なら2を下へ移動</li>
+                	<li>左回転なら２マス動かす</li>
+                </ul>
+
+        	<li>軸を上下に動かす</li>
+            	<ul>
+                	<li>0が90度（B）の場合は2を上，-90度（D）の場合は2を下へ移動</li>
+					<li>0が0度（A），180度（C）の場合は<br>
+						回転前のミノが右半分にある（B）なら2を下へ<br>
+						回転前のミノが左半分にある（D）なら1を上へ移動</li>
+                	<li>右回転なら２マス動かす</li>
+                </ul>
+            
+        </ol><br>
+        なお，1	は他5ミノの反対操作になっており，<br>
+		1と2，3と4，はそれぞれ反対操作になっているといえるでしょう．<br>
+		<i>（考察中）</i>
+
+
+
+
+
+
+		
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+  </article>
+
+  
+  <div id="to-top" style="position:fixed;right:5px;bottom:5px;"><a href=""><img src="img/toTop.jpg" width="50" height="50" alt="totop"></a></div>
+
+  
+  <footer>
+	<ul class="breadcrumb">
+    	<li><a href="index.html">Home</a></li>
+ 		<li><a href="basic.html">Basic</a></li>
+        <li><a href="srs.html">SRS</a></li>
+
+    </ul>
+  
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!------------------------------------------------------------------------------------------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+  
+  
+	 <script type="text/javascript" src="js/myscript.js"></script>
+  
+  </body>
+</html>

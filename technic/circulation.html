@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tetrisちゃんねる</title>  
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/mystyle.css" rel="stylesheet"> 
+    
+<!--    <link rel="shortcut icon" href="image/favicon.ico" />-->    
+	<meta name="Keywords" content="chikuwiron,Tetris,ハロテト,hello tetris">
+    <meta name="description" content="Tetrisについての情報をまとめていきます．">
+    <meta name="author" content="chikuwiron">
+	<link rel="icon" href="../img/favi.ico" type="image/vnd.microsoft.icon">					
+</head>
+ <body>
+  
+  <header>
+  	    
+    <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="nav navbar-header">
+        	<button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+            	<span class="glyphicon glyphicon-th-list"></span>
+            </button>
+        	<a class="navbar-brand " href="../index.html">Tetris</a>
+        </div>
+        
+        <div class="collapse navbar-collapse target">
+
+            <ul class="nav navbar-nav">
+                <li ><a href="">
+                	<li class="dropdown"><a href="basic.html" class="dropdown-toggle" data-toggle="dropdown">Basic <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="../glossary.html">用語集</a></li>
+           				  <li ><a href="../rule.html">ルール</a></li>
+                            <li class="divider"></li>
+                            <li ><a href="../stacking.html">Stacking</a></li>
+                            <li><a href="../srs.html">SRS</a></li>
+                             <li><a href="../ren.html">Combo</a></li>
+						</ul>
+ 					</li>
+                    
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">VS Method <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="../attack.html">積み</a></li>
+                            <li><a href="../dig.html">堀り</a></li>                            
+                            <li class="active"><a href="../vstec.html">テクニック</a></li>
+                            <li><a href="../start.html">開幕</a></li>
+						</ul>
+ 					</li></li>
+
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Spin Method<b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="../spins.html">回転入れ</a></li>       
+                            <li ><a href="../t-spin.html">T-Spin</a></li>
+						</ul>
+ 					</li></li>
+
+
+
+				      
+            </ul>
+
+        
+        </div>
+    </nav>
+    
+  </header>
+  
+  <article class="container">
+  
+    <div class="page-header">
+          <h1>循環の技法 <small>Rotation Method</small></h1>
+    </div>  
+
+
+
+
+			                                            
+            			
+    <p>  
+    <div class="col-sm-12">
+
+
+	  <h3>概要</h3>
+			ミノの組み合わせを意識し，相性の良いミノで積んでいくことで，スムーズに積みを行える技術です．<br>
+
+            
+
+
+      <img src="../img/vstec/circle/instance_001.jpg" width="120" height="160" alt="circle"> 
+      <img src="../img/vstec/circle/instance_002.jpg" width="120" height="160" alt="circle"> 
+      <img src="../img/vstec/circle/instance_003.jpg" width="120" height="160" alt="circle"> 
+      <img src="../img/vstec/circle/instance_004.jpg" alt="circle" width="53" height="160"> 
+      <br><br><br>
+
+	  <h3>データベース</h3>
+			3列で積む場合の地形一覧を示します．<br>
+		
+
+          <div class="panel-group" id="accordionx">
+
+                    	
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse1">
+									000        
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                        		<div class="panel-body">
+									To 001<br>
+							      <img src="../img/vstec/circle/000to001.jpg" width="61" height="81" alt="circle"> <br><br>
+
+
+
+									To 004<br>
+							      <img src="../img/vstec/circle/000to004.jpg" width="61" height="81" alt="circle"> <br><br>
+                                  
+									To 010<br>
+							      <img src="../img/vstec/circle/000to010.jpg" width="61" height="81" alt="circle"> <br><br>
+
+									To 012<br>
+							      <img src="../img/vstec/circle/000to012.jpg" width="61" height="81" alt="circle"> <br><br>
+
+									To 022<br>
+							      <img src="../img/vstec/circle/000to022.jpg" width="61" height="81" alt="circle"> <br><br>
+
+									To 031<br>
+							      <img src="../img/vstec/circle/000to031.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 040<br>
+							      <img src="../img/vstec/circle/000to040.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 100<br>
+							      <img src="../img/vstec/circle/000to100.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 130<br>
+							      <img src="../img/vstec/circle/000to130.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 210<br>
+							      <img src="../img/vstec/circle/000to210.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 220<br>
+							      <img src="../img/vstec/circle/000to220.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 400<br>
+							      <img src="../img/vstec/circle/000to400.jpg" width="61" height="81" alt="circle"> <br><br>
+
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse1"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse2">
+									001        
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse2" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 011<br>
+							      <img src="../img/vstec/circle/001to011.jpg" width="61" height="81" alt="circle"> <br><br>
+
+									To 020<br>
+							      <img src="../img/vstec/circle/001to020.jpg" width="61" height="81" alt="circle"> <br><br>
+                                  
+									To 023<br>
+							      <img src="../img/vstec/circle/001to023.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 032<br>
+							      <img src="../img/vstec/circle/001to032.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 041<br>
+							      <img src="../img/vstec/circle/001to041.jpg" width="61" height="81" alt="circle"> <br><br>
+    
+    								To 110<br>
+							      <img src="../img/vstec/circle/001to110.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 200<br>
+							      <img src="../img/vstec/circle/001to200.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 401<br>
+							      <img src="../img/vstec/circle/001to401.jpg" width="61" height="81" alt="circle"> <br><br>
+								
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse2"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse3">
+									002        
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse3" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/002to000.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 021<br>
+							      <img src="../img/vstec/circle/002to021.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 033<br>
+							      <img src="../img/vstec/circle/002to033.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 042<br>
+							      <img src="../img/vstec/circle/002to042.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 201<br>
+							      <img src="../img/vstec/circle/002to201.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 402<br>
+							      <img src="../img/vstec/circle/002to402.jpg" width="61" height="81" alt="circle"> <br><br>
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse3"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse4">
+									003       
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse4" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 001<br>
+							      <img src="../img/vstec/circle/003to001.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 022<br>
+							      <img src="../img/vstec/circle/003to022.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 043<br>
+							      <img src="../img/vstec/circle/003to043.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 202<br>
+							      <img src="../img/vstec/circle/003to202.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 403<br>
+							      <img src="../img/vstec/circle/003to403.jpg" width="61" height="81" alt="circle"> <br><br>
+                    				<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse4"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse5">
+									004       
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse5" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 002<br>
+							      <img src="../img/vstec/circle/004to002.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 023<br>
+							      <img src="../img/vstec/circle/004to023.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 044<br>
+							      <img src="../img/vstec/circle/004to044.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 203<br>
+							      <img src="../img/vstec/circle/004to203.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 404<br>
+							      <img src="../img/vstec/circle/004to404.jpg" width="61" height="81" alt="circle"> <br><br>
+                            
+                            		<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse5"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse010">
+									010    
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse010" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 014<br>
+							      <img src="../img/vstec/circle/010to014.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 023<br>
+							      <img src="../img/vstec/circle/010to023.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 032<br>
+							      <img src="../img/vstec/circle/010to032.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 230<br>
+							      <img src="../img/vstec/circle/010to230.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 320<br>
+							      <img src="../img/vstec/circle/010to320.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 410<br>
+							      <img src="../img/vstec/circle/010to410.jpg" width="61" height="81" alt="circle"> <br><br>
+                            
+                            		<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse5"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse7">
+									011       
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse7" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/011to000.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 024<br>
+							      <img src="../img/vstec/circle/011to024.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 033<br>
+							      <img src="../img/vstec/circle/011to033.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 042<br>
+							      <img src="../img/vstec/circle/011to042.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 120<br>
+							      <img src="../img/vstec/circle/011to120.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 210<br>
+							      <img src="../img/vstec/circle/011to210.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 300<br>
+							      <img src="../img/vstec/circle/011to300.jpg" width="61" height="81" alt="circle"> <br><br>
+                            	
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse7"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse8">
+									012       
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse8" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 010<br>
+							      <img src="../img/vstec/circle/012to010.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 034<br>
+							      <img src="../img/vstec/circle/012to034.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 100<br>
+							      <img src="../img/vstec/circle/012to100.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 301<br>
+							      <img src="../img/vstec/circle/012to301.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 430<br>
+							      <img src="../img/vstec/circle/012to430.jpg" width="61" height="81" alt="circle"> <br><br>
+                            	
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse8"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+			
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse9">
+									013       
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse9" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 011<br>
+							      <img src="../img/vstec/circle/013to011.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 044<br>
+							      <img src="../img/vstec/circle/013to044.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 101<br>
+							      <img src="../img/vstec/circle/013to101.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 302<br>
+							      <img src="../img/vstec/circle/013to302.jpg" width="61" height="81" alt="circle"> <br><br>
+                            	
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse9"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+				
+
+                        
+                                             <div class="panel panel-info">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordionx" href="#collapse10">
+                                                            014       
+                                                            </a>
+                                                        </h4>
+                                                  </div>
+                                                    <div id="collapse10" class="panel-collapse collapse ">
+                                                        <div class="panel-body">
+                                                            To 012<br>
+                                                          <img src="../img/vstec/circle/014to012.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                            To 102<br>
+                                                          <img src="../img/vstec/circle/014to102.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                            To 303<br>
+                                                          <img src="../img/vstec/circle/014to303.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                        
+                                                        
+                                                            <div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse10"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                                        </div>    
+                                                    </div>
+            </div>
+			
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse11">
+									020       
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse11" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 024<br>
+							      <img src="../img/vstec/circle/020to024.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 033<br>
+							      <img src="../img/vstec/circle/020to033.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 330<br>
+							      <img src="../img/vstec/circle/020to330.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 420<br>
+							      <img src="../img/vstec/circle/020to420.jpg" width="61" height="81" alt="circle"> <br><br>
+                            	
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse11"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+			
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse12">
+									021       
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse12" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 034<br>
+							      <img src="../img/vstec/circle/021to034.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 043<br>
+							      <img src="../img/vstec/circle/021to043.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 220<br>
+							      <img src="../img/vstec/circle/021to220.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 310<br>
+							      <img src="../img/vstec/circle/021to310.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse12"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+      
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse13">
+									022      
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse13" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 044<br>
+							      <img src="../img/vstec/circle/022to044.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 110<br>
+							      <img src="../img/vstec/circle/022to110.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 200<br>
+							      <img src="../img/vstec/circle/022to200.jpg" width="61" height="81" alt="circle"> <br><br>
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse13"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse14">
+									023      
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse14" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/023to000.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 201<br>
+							      <img src="../img/vstec/circle/023to201.jpg" width="61" height="81" alt="circle"> <br><br>
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse14"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse15">
+									024     
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse15" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 001<br>
+							      <img src="../img/vstec/circle/024to001.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 202<br>
+							      <img src="../img/vstec/circle/024to202.jpg" width="61" height="81" alt="circle"> <br><br>
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse15"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse16">
+									030  
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse16" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 034<br>
+							      <img src="../img/vstec/circle/030to034.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 430<br>
+							      <img src="../img/vstec/circle/030to430.jpg" width="61" height="81" alt="circle"> <br><br>
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse16"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse17">
+									031  
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse17" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 044<br>
+							      <img src="../img/vstec/circle/031to044.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 320<br>
+							      <img src="../img/vstec/circle/031to320.jpg" width="61" height="81" alt="circle"> <br><br>
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse17"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse18">
+									032  
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse18" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 210<br>
+							      <img src="../img/vstec/circle/032to210.jpg" width="61" height="81" alt="circle"> <br><br>
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse18"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse19">
+									033  
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse19" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 100<br>
+							      <img src="../img/vstec/circle/033to100.jpg" width="61" height="81" alt="circle"> <br><br>
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse19"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse20">
+									034  
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse20" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 101<br>
+							      <img src="../img/vstec/circle/034to101.jpg" width="61" height="81" alt="circle"> <br><br>
+                                
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse20"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse21">
+									040  
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse21" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 044<br>
+							      <img src="../img/vstec/circle/040to044.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 440<br>
+							      <img src="../img/vstec/circle/040to440.jpg" width="61" height="81" alt="circle"> <br><br>
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse21"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse22">
+									041
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse22" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 330<br>
+							      <img src="../img/vstec/circle/041to330.jpg" width="61" height="81" alt="circle"> <br><br>
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse22"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse23">
+									042
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse23" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 220<br>
+							      <img src="../img/vstec/circle/042to220.jpg" width="61" height="81" alt="circle"> <br><br>
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse23"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse24">
+									043
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse24" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 110<br>
+							      <img src="../img/vstec/circle/043to110.jpg" width="61" height="81" alt="circle"> <br><br>
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse24"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse25">
+									044
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse25" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/044to000.jpg" width="61" height="81" alt="circle"> <br><br>
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse25"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse26">
+									100
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse26" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 002<br>
+							      <img src="../img/vstec/circle/100to002.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 011<br>
+							      <img src="../img/vstec/circle/100to011.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 020<br>
+							      <img src="../img/vstec/circle/100to020.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 104<br>
+							      <img src="../img/vstec/circle/100to104.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 110<br>
+							      <img src="../img/vstec/circle/100to110.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 140<br>
+							      <img src="../img/vstec/circle/100to140.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 230<br>
+							      <img src="../img/vstec/circle/100to230.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 320<br>
+							      <img src="../img/vstec/circle/100to320.jpg" width="61" height="81" alt="circle"> <br><br>
+                            
+                            
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse26"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse27">
+									101
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse27" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/101to000.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 012<br>
+							      <img src="../img/vstec/circle/101to012.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 021<br>
+							      <img src="../img/vstec/circle/101to021.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 030<br>
+							      <img src="../img/vstec/circle/101to030.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 120<br>
+							      <img src="../img/vstec/circle/101to120.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 210<br>
+							      <img src="../img/vstec/circle/101to210.jpg" width="61" height="81" alt="circle"> <br><br>
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse27"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse29">
+									103
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse29" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 011<br>
+							      <img src="../img/vstec/circle/103to011.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 032<br>
+							      <img src="../img/vstec/circle/103to032.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 101<br>
+							      <img src="../img/vstec/circle/103to101.jpg" width="61" height="81" alt="circle"> <br><br>
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse29"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse30">
+									104
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse30" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 012<br>
+							      <img src="../img/vstec/circle/104to012.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 033<br>
+							      <img src="../img/vstec/circle/104to033.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 102<br>
+							      <img src="../img/vstec/circle/104to102.jpg" width="61" height="81" alt="circle"> <br><br>
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse30"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+
+
+
+                    
+                                         <div class="panel panel-info">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordionx" href="#collapse31">
+                                                        110
+                                                        </a>
+                                                    </h4>
+                                              </div>
+                                                <div id="collapse31" class="panel-collapse collapse ">
+                                                    <div class="panel-body">
+                                                        To 000<br>
+                                                      <img src="../img/vstec/circle/110to000.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                        To 003<br>
+                                                      <img src="../img/vstec/circle/110to003.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                        To 012<br>
+                                                      <img src="../img/vstec/circle/110to012.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                        To 021<br>
+                                                      <img src="../img/vstec/circle/110to021.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                        To 240<br>
+                                                      <img src="../img/vstec/circle/110to240.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                        To 330<br>
+                                                      <img src="../img/vstec/circle/110to330.jpg" width="61" height="81" alt="circle"> <br><br>
+                                                        To 420<br>
+                                                      <img src="../img/vstec/circle/110to420.jpg" width="61" height="81" alt="circle"> <br><br>
+                    
+                    
+                    
+                                                        <div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse31"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                                    </div>    
+                                                </div>
+            </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse32">
+									120
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse32" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 013<br>
+							      <img src="../img/vstec/circle/120to013.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 022<br>
+							      <img src="../img/vstec/circle/120to022.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 340<br>
+							      <img src="../img/vstec/circle/120to340.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 430<br>
+							      <img src="../img/vstec/circle/120to430.jpg" width="61" height="81" alt="circle"> <br><br>
+
+
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse32"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse33">
+									130
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse33" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 023<br>
+							      <img src="../img/vstec/circle/130to023.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 440<br>
+							      <img src="../img/vstec/circle/130to440.jpg" width="61" height="81" alt="circle"> <br><br>
+
+
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse33"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse34">
+									140
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse34" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 033<br>
+							      <img src="../img/vstec/circle/140to033.jpg" width="61" height="81" alt="circle"> <br><br>
+
+
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse34"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse35">
+									200
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse35" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/200to000.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 102<br>
+							      <img src="../img/vstec/circle/200to102.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 120<br>
+							      <img src="../img/vstec/circle/200to120.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 204<br>
+							      <img src="../img/vstec/circle/200to204.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 240<br>
+							      <img src="../img/vstec/circle/200to240.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 330<br>
+							      <img src="../img/vstec/circle/200to330.jpg" width="61" height="81" alt="circle"> <br><br>
+
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse35"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse36">
+									201
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse36" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 001<br>
+							      <img src="../img/vstec/circle/201to001.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 010<br>
+							      <img src="../img/vstec/circle/201to010.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 130<br>
+							      <img src="../img/vstec/circle/201to130.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 220<br>
+							      <img src="../img/vstec/circle/201to220.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse36"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse37">
+									202
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse37" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 011<br>
+							      <img src="../img/vstec/circle/202to011.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 020<br>
+							      <img src="../img/vstec/circle/202to020.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 110<br>
+							      <img src="../img/vstec/circle/202to110.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse37"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+					<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse38">
+									203
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse38" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/203to000.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 021<br>
+							      <img src="../img/vstec/circle/203to021.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse38"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+					<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse39">
+									204
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse39" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 001<br>
+							      <img src="../img/vstec/circle/204to001.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 022<br>
+							      <img src="../img/vstec/circle/204to022.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse39"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+					<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse40">
+									210
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse40" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 001<br>
+							      <img src="../img/vstec/circle/210to001.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 010<br>
+							      <img src="../img/vstec/circle/210to010.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 103<br>
+							      <img src="../img/vstec/circle/210to103.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse40"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+					<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse41">
+									220
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse41" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 002<br>
+							      <img src="../img/vstec/circle/220to002.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 011<br>
+							      <img src="../img/vstec/circle/220to011.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 440<br>
+							      <img src="../img/vstec/circle/220to440.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse41"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+
+					<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse42">
+									230
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse42" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 012<br>
+							      <img src="../img/vstec/circle/230to012.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse42"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse43">
+									240
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse43" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 022<br>
+							      <img src="../img/vstec/circle/240to022.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse43"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse44">
+									301
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse44" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 101<br>
+							      <img src="../img/vstec/circle/301to101.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 110<br>
+							      <img src="../img/vstec/circle/301to110.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 230<br>
+							      <img src="../img/vstec/circle/301to230.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse44"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse45">
+									302
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse45" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/302to000.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 120<br>
+							      <img src="../img/vstec/circle/302to120.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse45"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse46">
+									303
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse46" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 010<br>
+							      <img src="../img/vstec/circle/303to010.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse46"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse47">
+									304
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse47" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 011<br>
+							      <img src="../img/vstec/circle/304to011.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse47"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse48">
+									310
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse48" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 101<br>
+							      <img src="../img/vstec/circle/310to101.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 110<br>
+							      <img src="../img/vstec/circle/310to110.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 203<br>
+							      <img src="../img/vstec/circle/310to203.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 440<br>
+							      <img src="../img/vstec/circle/310to440.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse48"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse49">
+									320
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse49" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/320to000.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 102<br>
+							      <img src="../img/vstec/circle/320to102.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse49"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse50">
+									330
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse50" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 001<br>
+							      <img src="../img/vstec/circle/330to001.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse50"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse51">
+									340
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse51" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 011<br>
+							      <img src="../img/vstec/circle/340to011.jpg" width="61" height="81" alt="circle"> <br><br>
+									
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse51"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                               	  <a data-toggle="collapse" data-parent="#accordionx" href="#collapse52">
+									400
+                                  </a>
+                                </h4>
+                          </div>
+                      <div id="collapse52" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 200<br>
+							      <img src="../img/vstec/circle/400to200.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 302<br>
+							      <img src="../img/vstec/circle/400to302.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 320<br>
+							      <img src="../img/vstec/circle/400to320.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 404<br>
+							      <img src="../img/vstec/circle/400to404.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 440<br>
+							      <img src="../img/vstec/circle/400to440.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                               	  <div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse52"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                               	  <a data-toggle="collapse" data-parent="#accordionx" href="#collapse53">
+									401
+                                  </a>
+                                </h4>
+                          </div>
+                      <div id="collapse53" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 201<br>
+							      <img src="../img/vstec/circle/401to201.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 210<br>
+							      <img src="../img/vstec/circle/401to210.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 330<br>
+							      <img src="../img/vstec/circle/401to330.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse53"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                               	  <a data-toggle="collapse" data-parent="#accordionx" href="#collapse54">
+									402
+                                  </a>
+                                </h4>
+                          </div>
+                      <div id="collapse54" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 100<br>
+							      <img src="../img/vstec/circle/402to100.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 220<br>
+							      <img src="../img/vstec/circle/402to220.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse54"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                     <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordionx" href="#collapse55">
+                                            403
+                                            </a>
+                                        </h4>
+                                  </div>
+                                    <div id="collapse55" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                            To 110<br>
+                                          <img src="../img/vstec/circle/403to110.jpg" width="61" height="81" alt="circle"> <br><br>
+        
+                                            <div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse55"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                        </div>    
+                                    </div>
+            </div>     
+                                
+                                 
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                               	  <a data-toggle="collapse" data-parent="#accordionx" href="#collapse56">
+									404
+                                  </a>
+                                </h4>
+                          </div>
+                      <div id="collapse56" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/404to000.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse56"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                               	  <a data-toggle="collapse" data-parent="#accordionx" href="#collapse57">
+									410
+                                  </a>
+                                </h4>
+                          </div>
+                      <div id="collapse57" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 201<br>
+							      <img src="../img/vstec/circle/410to201.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 210<br>
+							      <img src="../img/vstec/circle/410to210.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 303<br>
+							      <img src="../img/vstec/circle/410to303.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse57"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                               	  <a data-toggle="collapse" data-parent="#accordionx" href="#collapse58">
+									420
+                                  </a>
+                                </h4>
+                          </div>
+                      <div id="collapse58" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 100<br>
+							      <img src="../img/vstec/circle/420to100.jpg" width="61" height="81" alt="circle"> <br><br>
+									To 202<br>
+							      <img src="../img/vstec/circle/420to202.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse58"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                               	  <a data-toggle="collapse" data-parent="#accordionx" href="#collapse59">
+									430
+                                  </a>
+                                </h4>
+                          </div>
+                      <div id="collapse59" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 101<br>
+							      <img src="../img/vstec/circle/430to101.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse59"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+                    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordionx" href="#collapse60">
+									440
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse60" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+									To 000<br>
+							      <img src="../img/vstec/circle/440to000.jpg" width="61" height="81" alt="circle"> <br><br>
+
+                                	<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordionx" href="#collapse60"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+   		    </div>
+
+
+      </div>      
+      </p>
+      
+  
+  
+  
+  
+  
+  
+  </article>
+
+  
+  <div id="to-top" style="position:fixed;right:5px;bottom:5px;"><a href=""><img src="../img/toTop.jpg" width="50" height="50" alt="totop"></a></div>
+
+  
+  <footer>
+	<ul class="breadcrumb">
+    	<li><a href="../index.html">Home</a></li>
+    	<li><a href="../vs.html">VS Method</a></li>
+    	<li><a href="../vstec.html">テクニック</a></li>
+    	<li><a href="circulation.html">循環の技法</a></li>
+
+	</ul>  
+    
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!------------------------------------------------------------------------------------------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  
+  
+  
+	 <script type="text/javascript" src="../js/myscript.js"></script>
+  
+  </body>
+</html>

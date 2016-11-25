@@ -1,0 +1,16 @@
+ul{
+  list-style:none;
+  
+}
+
+.scrollable {
+  height: 300px;
+  max-height: 300px;
+  overflow-x: hidden;
+}
+
+.jumbotron p {
+margin-bottom: 0px;
+font-size: 15px;
+font-weight: 200;
+}

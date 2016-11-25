@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tetrisちゃんねる</title>  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet"> 
+    
+<!--    <link rel="shortcut icon" href="image/favicon.ico" />-->    
+	<meta name="Keywords" content="chikuwiron,Tetris">
+    <meta name="description" content="Tetrisについての情報をまとめていきます．">
+    <meta name="author" content="chikuwiron">
+	<link rel="icon" href="img/favi.ico" type="image/vnd.microsoft.icon">					
+</head>
+ <body>
+  
+  <header>
+  	    
+    <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="nav navbar-header">
+        	<button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+            	<span class="glyphicon glyphicon-th-list"></span>
+            </button>
+        	<a class="navbar-brand " href="index.html">Tetris</a>
+        </div>
+        
+        <div class="collapse navbar-collapse target">
+
+            <ul class="nav navbar-nav">
+                <li ><a href="">
+                	<li class="dropdown"><a href="basic.html" class="dropdown-toggle" data-toggle="dropdown">Basic <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="glossary.html">用語集</a></li>
+           				  <li ><a href="rule.html">ルール</a></li>
+                            <li class="divider"></li>
+                            <li><a href="stacking.html">Stacking</a></li>
+                            <li><a href="srs.html">SRS</a></li>
+                             <li class="active"><a href="ren.html">Combo</a></li>
+						</ul>
+ 					</li>
+                    
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">VS Method <b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li><a href="attack.html">積み</a></li>
+                            <li><a href="dig.html">堀り</a></li>                            
+                            <li><a href="vstec.html">テクニック</a></li>
+                            <li><a href="start.html">開幕</a></li>
+						</ul>
+ 					</li></li>
+
+                <li ><a href="">
+                	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Spin Method<b class="caret"></b>
+                	  <ul class="dropdown-menu">
+           				  <li ><a href="spins.html">回転入れ</a></li>       
+                            <li ><a href="t-spin.html">T-Spin</a></li>
+						</ul>
+ 					</li></li>
+
+
+
+				      
+            </ul>
+
+        
+        </div>
+    </nav>
+    
+  </header>
+  
+  <article class="container">
+    <div class="page-header">
+          <h1>Combo <small></small></h1>
+    
+    </div>  
+    
+    <p>
+	<h3>Comboとは</h3>
+	コンボはライン消去を連続して行うことです．ライン消去を伴わないミノ接地まで継続されます．<br>
+	RENともいいます．<br>
+
+	<h3>Comboの威力</h3>
+    	対戦テトリスにおいて，Comboが強力である理由は，1コンボでも増えるとラインセントが増大することにあります．<br>
+		その詳細はソフトによって異なりますが，Tetris friends Arena E+による例を上げてみます．<br>
+
+   	<table class="table  table-hover table-condensed" >
+        	<thead>
+            	<tr><th>Combo</th><th>攻撃量</th><th>累積量</th></tr>
+            </thead>
+            <tbody>	
+            	<tr><td>1</td><td>0</td><td>0</td></tr>
+            	<tr class="warning"><td>2</td><td>1</td><td>1</td></tr>
+            	<tr><td>3</td><td>1</td><td>2</td></tr>
+            	<tr><td>4</td><td>1</td><td>3</td></tr>
+            	<tr class="warning"><td>5</td><td>2</td><td>5</td></tr>
+            	<tr><td>6</td><td>2</td><td>7</td></tr>
+            	<tr class="warning"><td>7</td><td>3</td><td>10</td></tr>
+            	<tr><td>8</td><td>3</td><td>13</td></tr>
+            	<tr class="warning"><td>9</td><td>4</td><td>17</td></tr>
+            	<tr><td>10</td><td>4</td><td>21</td></tr>
+            	<tr><td>11</td><td>4</td><td>25</td></tr>
+            	<tr class="warning"><td>12</td><td>5</td><td>30</td></tr>
+            	<tr><td>13</td><td>5</td><td>35</td></tr>
+            	<tr><td>14</td><td>5</td><td>40</td></tr>
+      </tbody>
+		</table>
+        
+    <br>
+<br>
+<br>
+		<h3>Comboの方法</h3>    
+		コンボを実際に行うためには，2~4列を積まずに空けておき，他の部分をギリギリまで積み上げた後<br>
+		空けた部分からライン消去を連続して行えばよいです．<br><br>
+
+
+        <h4>2列空け</h4>
+		2列空けて積みます．<br>
+		残り8列分を積みに使えるので平積みとおなじ感覚で積めます．<br>
+		消す際に注意しなければならないのはIミノです．それ単体ではライン消去ができません．<br>
+		ネクストにない状態で消し始めるとよいでしょう．<br>
+		それ以外のミノではどうやっても消せるので失敗するおそれも少ないですが，コンボ数も少なめです．<br>
+
+		
+        <img src="img/combo/combo2_001.jpg" width="176" height="352" alt="combo"> 
+    <img src="img/combo/combo2_002.jpg" width="176" height="352" alt="combo"> <br><br>
+
+
+    		
+
+        <hr><h4>3列空け</h4>
+		3列空けて積みます．<br>
+		比較的積みやすい上にコンボ数も中々のものです．<br>
+		Iミノは2列空け同様に注意した方がよいでしょう．最上部を4列空けておき回避する方法もあります．<br>
+		消すときのコツは，3列のうち真ん中を低く保つことです．<br>
+		高くなりすぎると他の２列が別れてしまい，1つのミノでは処理しきれなくなります．<br>
+        
+    <img src="img/combo/combo3_001.jpg" width="176" height="352" alt="combo"> 
+    <img src="img/combo/combo3_002.jpg" width="176" height="352" alt="combo"> <br><br>
+		
+                    
+        
+        
+        <hr><h4>4列空け～積み～</h4>
+        コンボがもっとも多くできるものが4列空けです．<br>
+		積み方には真ん中4列をあける"中空け"と，端4列を空ける"端空け"があります．<br>
+		中空けは積みスペースが3列と3列となり，非常に積みづらいですが，<br>
+		ミノの出現位置が空いていることになるので	刺さる心配が小さくなります．<br>
+		
+        また，消すときのために3ブロック分出して置くことが多いです．これを"種3"と呼びます<br>
+		同様の意味で6ブロック分出しておくことを""種6"といいます．<br>
+
+    <img src="img/combo/combo4_001.jpg" width="176" height="352" alt="combo"> 
+    <img src="img/combo/combo4_002.jpg" width="176" height="352" alt="combo"> 
+    <img src="img/combo/combo4_003.jpg" width="176" height="352" alt="combo"> <br><br><br>
+    
+    	
+        
+
+        <h4>4列空け～消し～</h4>
+        4列空けの消し方は，常に3ブロック残るようにすることが重要です．<br>
+        消しやすい地形を維持することができます．<br>
+		種6の場合でも同じです．残りを2ブロックにせず，3ブロックを維持することを心がけてください．<br>
+		ミノによって消し方が決まっているので，慣れればできるようになります．どうしても続かない場合もあるのでそのときは諦めましょう．<br>
+		以下に消し方のパターンを示しておきます．<br>
+		なお，数字の意味は4列のうちの種となるブロックの位置と数です．<br>
+        Iミノの横置きは省略しています．<br>
+
+		
+
+<br><br><br>
+
+
+          <div class="panel-group" id="accordion">
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+									0003          
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse9" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_0003_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0003_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0003_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0003_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0003_005.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0003_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0003_007.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0003_008.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0003_009.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0003_010.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0003_011.jpg" width="176" height="141">	<br><br>
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse9"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+
+
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+									0012          
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse8" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_0012_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0012_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_005.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_007.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_008.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_009.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_010.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_011.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_012.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_013.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_014.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_015.jpg" width="176" height="141">	<br><br>
+<br>
+<br>
+                                	<img src="img/combo/combo_0012_016.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0012_017.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_018.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_019.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_020.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_021.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_022.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_023.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_024.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_025.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_026.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_027.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_028.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0012_029.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0012_030.jpg" width="176" height="141">	<br><br>
+
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse8"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+ 
+              		    <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+										0021         
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse7" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_0021_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0021_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0021_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0021_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                  	<img src="img/combo/combo_0021_005.jpg" width="176" height="141">	<br><br>
+<br><br>
+                                	<img src="img/combo/combo_0021_006.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0021_007.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0021_008.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0021_009.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0021_010.jpg" width="176" height="141">	<br><br>
+									
+                                	<img src="img/combo/combo_0021_011.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0021_012.jpg" width="176" height="141">	<br><br>
+    
+    								<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse7"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+                        
+                        	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+									0102         
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse11" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_0102_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0102_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0102_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0102_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0102_005.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0102_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0102_007.jpg" width="176" height="141">	<br><br>
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse11"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+
+
+                 
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+									0111          
+                                    </a>
+                                </h4>
+                          </div>
+  						
+                            <div id="collapse1" class="panel-collapse collapse">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_0111_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0111_003.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0111_009.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0111_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0111_010.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0111_005.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0111_011.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0111_006.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0111_012.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_0111_007.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0111_013.jpg" width="176" height="141">	<br><br>
+<br><br>
+                                	<img src="img/combo/combo_0111_014.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0111_015.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0111_016.jpg" width="176" height="141">	<br><br>
+<br><br>
+                                	<img src="img/combo/combo_0111_017.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0111_018.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0111_019.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_0111_020.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_0111_021.jpg" width="176" height="141">	<br><br>
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+
+                    	
+		                 <div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+									1002        
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse12" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_1002_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_1002_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1002_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1002_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1002_005.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1002_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1002_007.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1002_008.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1002_009.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1002_010.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1002_011.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1002_012.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1002_013.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1002_014.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1002_015.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1002_016.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1002_017.jpg" width="176" height="141">	<br><br>
+
+
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse12"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+                 
+                 
+                 
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+									1011          
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse2" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_1011_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_1011_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_007.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_003.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_008.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_009.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_005.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_010.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_011.jpg" width="176" height="141">	<br><br>
+
+<br><br>
+
+                                	<img src="img/combo/combo_1011_012.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_1011_013.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_014.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_015.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_016.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_017.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_018.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_019.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_020.jpg" width="176" height="141">	<br><br>
+
+<br><br>
+
+                                	<img src="img/combo/combo_1011_021.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_1011_022.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_023.jpg" width="176" height="141">	<br><br>
+<br><br>
+
+                                	<img src="img/combo/combo_1011_024.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_025.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_026.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1011_027.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1011_028.jpg" width="176" height="141">	<br><br>
+
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+
+
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+									1101          
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse3" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_1101_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_1101_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1101_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_005.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1101_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_007.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1101_008.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_009.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1101_010.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_011.jpg" width="176" height="141">	<br><br>
+<br><br>
+
+                                	<img src="img/combo/combo_1101_012.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_1101_013.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_014.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1101_015.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_016.jpg" width="176" height="141">	<br><br>
+      
+                                	<img src="img/combo/combo_1101_017.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_018.jpg" width="176" height="141">	<br><br>
+      
+                                	<img src="img/combo/combo_1101_019.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_020.jpg" width="176" height="141">	<br><br>
+
+
+<br><br>
+                                	<img src="img/combo/combo_1101_021.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1101_022.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_023.jpg" width="176" height="141">	<br><br>
+
+<br><br>
+                                	<img src="img/combo/combo_1101_024.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1101_025.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_026.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_1101_027.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_1101_028.jpg" width="176" height="141">	<br><br>
+
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+
+                     
+                     
+                     
+                        
+                                                <div class="panel panel-info">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                                            1110          
+                                                            </a>
+                                                        </h4>
+                                                  </div>
+                                                    <div id="collapse4" class="panel-collapse collapse ">
+                                                        <div class="panel-body">
+                                                            <img src="img/combo/combo_1110_001.jpg" width="176" height="141">	<br><br>
+                        
+                        
+                                                            <img src="img/combo/combo_1110_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1110_003.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_1110_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1110_005.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_1110_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1110_007.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_1110_008.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1110_009.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_1110_010.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1110_011.jpg" width="176" height="141">	<br><br>
+                        <br><br>
+                                                            <img src="img/combo/combo_1110_012.jpg" width="176" height="141">	<br><br>
+                        
+                        
+                                                            <img src="img/combo/combo_1110_013.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1110_014.jpg" width="176" height="141">	<br><br>
+                        
+                        <br><br>
+                                                            <img src="img/combo/combo_1110_015.jpg" width="176" height="141">	<br><br>
+                        
+                        
+                                                            <img src="img/combo/combo_1110_018.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1110_019.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_1110_016.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1110_017.jpg" width="176" height="141">	<br><br>
+                        
+                        
+                                                            <div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                        
+                        
+                        <div class="panel panel-info">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                                             1200         
+                                                            </a>
+                                                        </h4>
+                                                  </div>
+                                                    <div id="collapse6" class="panel-collapse collapse ">
+                                                        <div class="panel-body">
+                                                            <img src="img/combo/combo_1200_001.jpg" width="176" height="141">	<br><br>
+                        
+                        
+                                                            <img src="img/combo/combo_1200_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1200_003.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_1200_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1200_005.jpg" width="176" height="141">	<br><br>
+                                <br>
+                        <br>
+                                                            <img src="img/combo/combo_1200_006.jpg" width="176" height="141">	<br><br>
+                                  
+                                                            <img src="img/combo/combo_1200_007.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1200_008.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_1200_009.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1200_010.jpg" width="176" height="141">	<br><br>
+                                                            
+                                                            <img src="img/combo/combo_1200_011.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_1200_012.jpg" width="176" height="141">	<br><br>
+                                                    
+                                                            
+                                                            <div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse6"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                                        </div>    
+                                                    </div>
+                                                </div>                        
+                        
+                        
+                        
+                                                
+                        <div class="panel panel-info">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                                                            2001       
+                                                            </a>
+                                                        </h4>
+                                                  </div>
+                                                    <div id="collapse13" class="panel-collapse collapse ">
+                                                        <div class="panel-body">
+                                                            <img src="img/combo/combo_2001_001.jpg" width="176" height="141">	<br><br>
+                        
+                        
+                                                            <img src="img/combo/combo_2001_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_2001_003.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_2001_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_2001_005.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_2001_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_2001_007.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_2001_008.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_2001_009.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_2001_010.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_2001_011.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_2001_012.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_2001_013.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_2001_014.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_2001_015.jpg" width="176" height="141">	<br><br>
+                        
+                                                            <img src="img/combo/combo_2001_016.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                                            <img src="img/combo/combo_2001_017.jpg" width="176" height="141">	<br><br>
+                        
+                        
+                        
+                                                            <div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse13"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                                        </div>    
+                                                    </div>
+                                                </div>                        
+
+					
+                    
+                        	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
+									2010       
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse14" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_0102_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_2010_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2010_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2010_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2010_005.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2010_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2010_007.jpg" width="176" height="141">	<br><br>
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse14"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+                    
+                    	
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+									2100          
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse5" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_2100_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_2100_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_005.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_007.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_008.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_009.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_010.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_011.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_012.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_013.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_014.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_015.jpg" width="176" height="141">	<br><br>
+<br>
+<br>
+                                	<img src="img/combo/combo_2100_016.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_2100_017.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_018.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_019.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_020.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_021.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_022.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_023.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_024.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_025.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_026.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_027.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_028.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_2100_029.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_2100_030.jpg" width="176" height="141">	<br><br>
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+
+
+
+
+
+
+
+
+
+
+                    	<div class="panel panel-info">
+                        	<div class="panel-heading">
+                            	<h4 class="panel-title">
+                                	<a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+									3000          
+                                    </a>
+                                </h4>
+                          </div>
+                            <div id="collapse10" class="panel-collapse collapse ">
+                        		<div class="panel-body">
+                                	<img src="img/combo/combo_3000_001.jpg" width="176" height="141">	<br><br>
+
+
+                                	<img src="img/combo/combo_3000_002.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_3000_003.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_3000_004.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_3000_005.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_3000_006.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_3000_007.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_3000_008.jpg" width="176" height="141">  <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_3000_009.jpg" width="176" height="141">	<br><br>
+
+                                	<img src="img/combo/combo_3000_010.jpg" width="176" height="141">	 <span class="glyphicon glyphicon-arrow-right">  </span>
+                                	<img src="img/combo/combo_3000_011.jpg" width="176" height="141">	<br><br>
+
+									<div class="navbar-right"><a data-toggle="collapse" data-parent="#accordion" href="#collapse10"><span class="glyphicon glyphicon-resize-small"></span></a>	</div>
+                                </div>    
+                            </div>
+            		    </div>
+
+
+                    
+
+
+
+
+	</div>
+
+	</p>
+
+  </article>
+
+  
+  <div id="to-top" style="position:fixed;right:5px;bottom:5px;"><a href=""><img src="img/toTop.jpg" width="50" height="50" alt="totop"></a></div>
+
+  
+  <footer>
+	<ul class="breadcrumb">
+    	<li><a href="index.html">Home</a></li>
+<!--	 <li class="navbar-right"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a></li>
+-->       
+    	<li><a href="basic.html">Basic</a></li>
+    	<li><a href="ren.html">Combo</a></li>
+		
+
+</ul>
+  
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!------------------------------------------------------------------------------------------------------------------------------->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+  
+  
+	 <script type="text/javascript" src="js/myscript.js"></script>
+  
+  </body>
+</html>
